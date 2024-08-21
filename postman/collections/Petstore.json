@@ -143,7 +143,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/pets?limit=<integer>",
+							"raw": "{{baseUrl}}/pets?limit5=<integer>&limit3=<integer>",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -153,6 +153,17 @@
 							"query": [
 								{
 									"key": "limit",
+									"value": "55",
+									"description": "How many items to return at one time (max 100)",
+									"disabled": true
+								},
+								{
+									"key": "limit5",
+									"value": "<integer>",
+									"description": "How many items to return at one time (max 100)"
+								},
+								{
+									"key": "limit3",
 									"value": "<integer>",
 									"description": "How many items to return at one time (max 100)"
 								}
@@ -384,7 +395,8 @@
 		{
 			"id": "18b05444-86e1-44b8-9ddc-3fa426867b7b",
 			"key": "baseUrl",
-			"value": "http://petstore.swagger.io/v1"
+			"value": "http://petstore.swagger.io/v1",
+			"type": "any"
 		}
 	]
 }

@@ -14,7 +14,15 @@ paths:
       tags:
         - pets
       parameters:
-        - name: limit
+        - name: limit5
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          schema:
+            type: integer
+            maximum: 100
+            format: int32
+        - name: limit3
           in: query
           description: How many items to return at one time (max 100)
           required: false
